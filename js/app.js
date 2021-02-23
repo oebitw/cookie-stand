@@ -79,7 +79,7 @@ function tableHeader() {
   tableElement.appendChild( tr1Element );
   let tdElement = document.createElement( 'th' );
   tr1Element.appendChild( tdElement );
-  tdElement.textContent = 'Location/Time';
+  tdElement.textContent = ' ';
 
   for ( let i = 0; i < workingHours.length; i++ ) {
     const tdElement = document.createElement( 'th' );
