@@ -146,6 +146,67 @@ function footerTotal() {
   tdElement.textContent = total;
 }
 
+// Invoke Table Header ............................................
+
+tableHeader();
+
+
+
+//.............................................................................
+// New Shop Form
+
+
+
+let shopForm = document.getElementById( 'form' );
+shopForm.addEventListener( 'submit', newShop );
+
+
+
+function newShop( event ) {
+  event.preventDefault();
+
+  let shopLocation = event.target.shopLocation.value;
+
+  let minCust =event.target.minCustomers.value;
+
+  let maxCust =event.target.maxCustomers.value;
+
+  let avgCookies = event.target.avgCookies.value;
+
+  let x = new Shops ( shopLocation, parseFloat( minCust ), parseFloat( maxCust ), parseFloat( avgCookies ) );
+
+  x.getSales();
+  x.randomCustomer();
+  x.tableMain();
+  x.citiesTotal();
+
+
+
+  document.getElementById( 'header' ).deleteRow( 6 );
+  footerTotal();
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,7 +217,6 @@ function footerTotal() {
 const seattle = new Shops( 'Seattle', 23, 65, 6.3 );
 seattle.getSales();
 seattle.randomCustomer();
-tableHeader();
 seattle.tableMain();
 seattle.citiesTotal();
 
