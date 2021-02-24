@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="reset" href="./css/reset.css">
 </head>
 <body>
 
@@ -27,45 +28,83 @@
 
   </header>
 
-  <h1 class="salesh1">
-     Cookies Sales
-  </h1>
+  <main>
 
-  
- 
-    <div id=City>
-        
-      <!-- <article>
-          <h1></h1>
-          <table>
-            <tr>
-              <th>Good with other Cat</th>
-              <th>Good with Kids</th>
-              <th>Good with Dogs</th>
-            </tr>
-            <tr>
-              <td>true</td>
-              <td>false</td>
-              <td>true</td>
-            </tr>
-          </table>
-          <img>
-        </article> -->
-        <!-- <table>
-          <tr>
-            <th>Good with other Cat</th>
-            <th>Good with Kids</th>
-            <th>Good with Dogs</th>
-          </tr>
-          <tr>
-            <td>true</td>
-            <td>false</td>
-            <td>true</td>
-          </tr>
-        </table> -->
-        
+    <!-- Page Title -->
+
+    <h1 class="salesh1">
+      Cookies Sales
+    </h1>
+
+
+    <!-- Form to add new shop to the table -->
+
+    <form id="form" action="">
+
+      <fieldset>
+        <legend> Add New Shop </legend>
+
+        <!-- ADD Shop Location -->
+
+        <label for="shopLocation"> Shop Location </label>
+        <input required type='text' id="shopLocation">
+
        
+
+
+        <!-- Minimum Customers -->
+
+
+        <label for="minCustomers"> Hourly Min Customers </label>
+        <input required type='text' name="min_customers" id="minCustomers"> 
+
+        
+
+        <!-- Maximum Customers -->
+
+        
+
+        <label for="maxCustomers"> Hourly Maximum Customers </label>
+        <input required type='text' name="max_customers" id="maxCustomers">
+
+        
+
+
+        <!-- Average Cookies sold Per customer -->
+
+        
+
+        <label for="averageCookies"> Avg Cookies Sold </label>
+        <input required type='text' id="avgCookies">
+
+
+        <!-- SUBMIT -->
+
+        <input class="formSubmit" required type='submit' >
+
+      </fieldset>
+    </form>
+
+
+
+
+
+    <!-- Sales Table , Created in JS -->
+
+    <div id=City>
+
     </div>
+
+
+
+  </main>
+
+  <footer>
+
+
+  </footer>
+
+
     <script src="./js/app.js"></script>
 </body>
 </html>
