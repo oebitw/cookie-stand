@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="reset" href="./css/reset.css">
 </head>
+
 <body>
     <header>
-        
+
         <img class="logo" src="./images/salmon.png" alt="Logo">
-        
+
 
         <nav>
             <ul>
@@ -30,8 +32,65 @@
             Welcome To Our Store!
         </h1>
 
-    
-        <div class="collections">
+
+
+
+        <!-- Slideshow container -->
+        <!-- Note That the slider html css and js codes i got them from w3school website :)  -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="./images/family.jpg" style="width: 100%;">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="./images/salmon.png" class="pic2">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="./images/frosted-cookie.jpg" class="pic3" >
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="./images/chinook (1).jpg" class="pic4" >
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="./images/cutter.jpeg" class="pic5">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="./images/fish.jpg" class="pic6" >
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="./images/shirt.jpg" class="pic7" >
+                <div class="text"></div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <!-- <div class="collections">
 
             <img class="pic1" src="./images/family.jpg" alt="">
             <img class="pic2" src="./images/chinook (1).jpg" alt="">
@@ -41,7 +100,7 @@
             <img class="pic6" src="./images/salmon.png" alt="">
             <img class="pic7" src="./images/shirt.jpg" alt="">
 
-        </div>
+        </div> -->
 
         <section>
 
@@ -51,7 +110,7 @@
                 Our Location: Seattle, WA, USA <br>
                 Working Hours: 6am to 8pm Every Day. <br>
                 Contact Us: 101 111 111 111
-                
+
             </p>
 
             <h2>Tokyo</h2>
@@ -60,7 +119,7 @@
                 Our Location: tokyo,japan <br>
                 Working Hours: 6am to 8pm Every Day. <br>
                 Contact Us: 201 555 555 555
-                
+
             </p>
 
             <h2>Dubai</h2>
@@ -98,11 +157,12 @@
 
     <footer>
 
-        
+
 
     </footer>
 
     <script src="./js/index.js"></script>
-    
+
 </body>
+
 </html>
