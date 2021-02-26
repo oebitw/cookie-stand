@@ -175,15 +175,30 @@ function newShop( event ) {
 
   let x = new Shops ( shopLocation, parseFloat( minCust ), parseFloat( maxCust ), parseFloat( avgCookies ) );
 
+  // x.getSales();
+  // x.randomCustomer();
+  // x.tableMain();
+  // x.citiesTotal();
+
+
+
+  // document.getElementById( 'header' ).deleteRow( 6 );
+  // footerTotal();
+  document.getElementById( 'header' ).removeChild( document.getElementById('header').lastChild);
+
   x.getSales();
   x.randomCustomer();
   x.tableMain();
   x.citiesTotal();
-
-
-
-  document.getElementById( 'header' ).deleteRow( 6 );
   footerTotal();
+
+
+
+
+
+
+
+
 
 
 
